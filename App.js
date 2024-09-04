@@ -44,6 +44,9 @@ export default function App() {
         setDiceImage(DiceOne);
         break;
     }
+    if (navigator.vibrate) {
+      navigator.vibrate(200);
+    }
   };
 
   return (
